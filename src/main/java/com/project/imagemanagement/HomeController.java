@@ -51,7 +51,7 @@ public class HomeController extends ImageHandler {
             //resize image and show as thumbnail
             setThumbnail(thumbNails,img,event -> {
                 dimensions.setText(String.valueOf(height)+" x "+String.valueOf(width));
-                fileLocation.setText(selectedFile.getAbsolutePath().toString());
+                fileLocation.setText(selectedFile.getAbsolutePath());
             });
 
             //Upload to ImageDirectory
